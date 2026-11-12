@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f7ff;
+    background: grey;
     color: #17233b;
 }
 
@@ -34,7 +34,7 @@ nav h2 {
 }
 
 nav h2 span {
-    color: #4285ff;
+    color: red;
 }
 
 nav ul {
@@ -97,7 +97,7 @@ nav ul li a:hover {
 /* Buttons */
 .btn {
     display: inline-block;
-    background: #4285ff;
+    background: orange;
     color: white;
     padding: 12px 25px;
     border-radius: 30px;
@@ -128,9 +128,9 @@ section h2 {
     max-width: 850px;
     margin: auto;
     text-align: center;
-    line-height: 1.9;
+    line-height: 1.2;
     font-size: 17px;
-    color: #526079;
+    color: purple;
 }
 
 /* Skills Section */
