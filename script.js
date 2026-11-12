@@ -1,7 +1,7 @@
 
 // 1. Welcome Message
 window.addEventListener("load", function () {
-    console.log("Welcome to Ishika Portfolio!");
+    console.log("Welcome to Ishika Portfolio! ");
 });
 
 
