@@ -1,7 +1,7 @@
 
 // 1. Welcome Message
 window.addEventListener("load", function () {
-    console.log("Welcome to Anshul Shukla's Portfolio!");
+    console.log("Welcome to Ishika Portfolio!");
 });
 
 
@@ -44,7 +44,6 @@ contactButton.addEventListener("click", function () {
 });
 
 
-// 5. Highlight Navigation Links
 const sections = document.querySelectorAll("section[id]");
 const navigationLinks = document.querySelectorAll("nav ul li a");
 
@@ -81,7 +80,7 @@ const footer = document.querySelector("footer");
 if (footer) {
     const year = new Date().getFullYear();
     footer.innerHTML = `
-        <p>&copy; ${year} Anshul Shukla.
+        <p>&copy; ${year} Ishika
         All Rights Reserved.</p>
     `;
 }
