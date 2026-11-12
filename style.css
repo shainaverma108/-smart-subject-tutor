@@ -1,0 +1,270 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+    color: #17233b;
+}
+
+/* Navigation Bar */
+header {
+    background: #0b1427;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 26px;
+}
+
+nav h2 span {
+    color: #4285ff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4285ff;
+}
+
+/* Home Section */
+#home {
+    min-height: 85vh;
+    background: linear-gradient(
+        135deg,
+        #091225,
+        #172e58
+    );
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    color: white;
+}
+
+.home-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 span {
+    color: #4285ff;
+}
+
+.home-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 17px;
+    max-width: 550px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #4285ff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2464d8;
+    transform: translateY(-4px);
+}
+
+/* Common Section Styling */
+section:not(#home) {
+    padding: 70px 10%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #10234a;
+}
+
+/* About Section */
+#about p {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.9;
+    font-size: 17px;
+    color: #526079;
+}
+
+/* Skills Section */
+#skills {
+    background: #eaf0fc;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.skills-list div {
+    background: white;
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.skills-list div:hover {
+    background: #4285ff;
+    color: white;
+    transform: translateY(-6px);
+}
+
+/* Projects Section */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border: 1px solid #dce5f5;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(66,133,255,0.2);
+}
+
+.project-card h3 {
+    color: #2868d9;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #526079;
+    line-height: 1.7;
+}
+
+/* Education Section */
+#education {
+    background: #eaf8f4;
+}
+
+.education-card {
+    background: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.education-card h3 {
+    color: #2868d9;
+    margin-bottom: 12px;
+}
+
+.education-card p {
+    margin: 8px;
+    color: #526079;
+}
+
+/* Contact Section */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 15px;
+    color: #526079;
+}
+
+/* Footer */
+footer {
+    background: #0b1427;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    section:not(#home) {
+        padding: 50px 6%;
+    }
+}
